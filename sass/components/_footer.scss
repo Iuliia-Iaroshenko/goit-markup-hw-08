@@ -1,0 +1,215 @@
+/* Footer */
+.footer {
+  padding: 60px 0;
+}
+
+.container-adr {
+  @media (max-width: 767px) {
+    display: block;
+    text-align: center;
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.footer-adr {
+  @media (max-width: 767px) {
+    margin-right: 0;
+  }
+
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    margin-right: 165px;
+    margin-left: 76px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 70px;
+  }
+}
+
+.address {
+  margin-bottom: 60px;
+}
+
+.address__text {
+  margin-bottom: 9px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $white-text;
+}
+
+.contacts-footer__item {
+  margin-bottom: 9px;
+}
+
+.contacts-footer__link {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $white-text-op60;
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $blue-text;
+  }
+}
+
+/* Присоединяйтесь */
+
+.subscription {
+  display: block;
+  text-align: center;
+  @media (min-width: $tablet) {
+    align-items: baseline;
+  }
+  @media (min-width: $desktop) {
+    width: 206px;
+    height: 80px;
+    margin-right: 93px;
+  }
+}
+
+.subscription__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-text;
+}
+
+.subscription__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    display: inline-flex;
+    width: 206px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    width: 206px;
+  }
+}
+
+.subscription__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: $white-text;
+  background-color: $bg-links-op10;
+  border-radius: 100px;
+
+  transition-property: color, background-color, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $white-text;
+    background-color: $blue-text;
+    border-radius: 100px;
+  }
+}
+
+.subscription__icon {
+  display: flex;
+  align-items: center;
+  fill: currentColor;
+
+  &:hover {
+    fill: $white-text;
+  }
+}
+
+/*  Форма - Подпишитесь на рассылку */
+
+.signup-form {
+  @media (min-width: $mobile) and (max-width: 1199px) {
+    display: block;
+    width: 450px;
+    text-align: center;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 570px;
+  }
+}
+
+.signup-form__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-text;
+}
+
+.signup__input {
+  width: 354px;
+  height: 50px;
+  padding: 15px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: $white-text-op60;
+  background-color: $dark-grey;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  &:focus {
+    outline: none;
+    border-color: $blue-text;
+  }
+  @media (max-width: 1199px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 354px;
+    margin-right: 12px;
+  }
+}
+
+.btn-submit {
+  position: relative;
+  display: inline-flex;
+
+  padding-left: 29px;
+  padding-right: 62px;
+
+  &:hover,
+  &:focus {
+    color: $black-text;
+  }
+}
+
+.button__icon {
+  position: absolute;
+  right: 28px;
+  fill: $white-text;
+  align-items: center;
+}

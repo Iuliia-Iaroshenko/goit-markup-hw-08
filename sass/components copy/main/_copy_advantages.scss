@@ -1,0 +1,54 @@
+/* Секция "Преимущества" */
+
+.advantages {
+  padding: 94px 0;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-list__item {
+  margin-right: 30px;
+  flex-basis: calc((100% - 90px) / 4);
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.advantages-list__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantages-list__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: $light-grey;
+}
+
+.advantages-list__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $black-text;
+}
+
+.advantages-list__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: $grey-text;
+}

@@ -1,0 +1,84 @@
+/* Секция "Наша команда" */
+
+.team {
+  padding: 94px 0;
+  background-color: $light-grey;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-list__item {
+  margin-right: 30px;
+  width: calc((100% - 90px) / 4);
+  background-color: $bg-white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.team-list__text {
+  padding: 30px 30px;
+}
+
+.team-list__member {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $black-text;
+}
+
+.team-list__post {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $grey-text;
+}
+
+.social-network {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-network__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  color: $icons;
+
+  transition-property: color, background-color, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $white-text;
+    background-color: $blue-text;
+    border-radius: 100px;
+  }
+}
+
+.social-network__icon {
+  display: flex;
+  align-items: center;
+  fill: currentColor;
+
+  &:hover {
+    fill: $white-text;
+  }
+}

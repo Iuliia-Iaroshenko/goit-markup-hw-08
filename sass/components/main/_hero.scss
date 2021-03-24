@@ -1,0 +1,39 @@
+.hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 118px 0;
+  text-align: center;
+  background-image: linear-gradient(to right, $hero-overlay, $hero-overlay),
+    url(../images/bg-img-mobile.jpg);
+  background-size: cover;
+
+  @media (min-width: $desktop) {
+    padding: 200px 0;
+  }
+}
+
+.hero__title {
+  width: 360px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $white-text;
+
+  @media (min-width: $desktop) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.btn-order:hover,
+.btn-order:focus {
+  color: $black;
+}

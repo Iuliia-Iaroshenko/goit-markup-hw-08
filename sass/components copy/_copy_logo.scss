@@ -1,34 +1,20 @@
 .header-nav__logo {
   display: inline-block;
-  padding: 16px 0;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
   margin-left: 0;
-  @media (min-width: $tablet) {
-    padding: 26px 0;
-    margin-right: 88px;
-    margin-left: 0;
-  }
-  @media (min-width: $desktop) {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
-    margin-left: 0;
-  }
 }
 
 .header-nav__logo,
 .header-nav__logo-color,
 .footer-adr__logo,
 .footer-adr__logo-color {
-  font-family: $secondary-font;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 1.16;
+  font-size: 26px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
-
-  @media (min-width: $desktop) {
-    font-size: 26px;
-    line-height: 1.2;
-  }
 }
 
 .header-nav__logo-color,
