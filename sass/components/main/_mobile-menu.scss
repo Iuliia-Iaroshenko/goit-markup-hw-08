@@ -1,0 +1,145 @@
+.menu-container {
+  position: fixed;
+
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 48px 40px;
+  background-color: $white-text;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-toggle {
+  position: absolute;
+  display: flex;
+  top: 10px;
+  right: 15px;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: $white-text;
+  transition: color 250ms $timing-function;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.icon-menu {
+  &:hover,
+  &:focus {
+    fill: $blue-text;
+  }
+}
+
+.icon-menu-close {
+  &:hover,
+  &:focus {
+    fill: $blue-text;
+  }
+}
+
+.mobile-menu {
+  margin-bottom: 203px;
+}
+
+.mobile-menu__item {
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mobile-menu__link {
+  display: block;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: $black-text;
+  transition: color 250ms $timing-function;
+
+  &--current {
+    color: $blue-text;
+  }
+
+  &:hover,
+  &:focus {
+    color: $blue-text;
+  }
+}
+
+.mobile-contacts {
+  margin-bottom: 64px;
+}
+
+.mobile-contacts__item {
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mobile-contacts__link {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: $grey-text;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    font-size: 34px;
+    line-height: 1.17;
+    color: $blue-text;
+  }
+}
+
+.mobile-social {
+  display: flex;
+}
+
+.mobile-social__item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mobile-social__link {
+  display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $blue-text;
+
+  &::after {
+    content: '';
+
+    display: block;
+    margin-left: 10px;
+    width: 1px;
+    height: 22px;
+    background-color: $grey-text;
+
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+}
