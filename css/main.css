@@ -527,6 +527,7 @@ footer {
 }
 
 .advantages-list__title {
+  text-align: center;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -1456,6 +1457,12 @@ footer {
   color: #ffffff;
 }
 
+@media (min-width: 1200px) {
+  .subscription__title {
+    text-align: left;
+  }
+}
+
 .subscription__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1736,20 +1743,32 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mobile-social__item {
   margin-right: 10px;
 }
 
-.mobile-social__item:last-child {
-  margin-bottom: 0;
+@media (max-width: 480px) {
+  .mobile-social__item {
+    margin-bottom: 10px;
+  }
+  .mobile-social__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 }
 
 .mobile-social__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
+      -ms-flex-direction: inherit;
+          flex-direction: inherit;
+  width: 100%;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;

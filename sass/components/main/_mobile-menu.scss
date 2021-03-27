@@ -111,18 +111,25 @@
 
 .mobile-social {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobile-social__item {
   margin-right: 10px;
 
-  &:last-child {
-    margin-bottom: 0;
+  @media (max-width: $mobile) {
+    margin-bottom: 10px;
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
 }
 
 .mobile-social__link {
   display: flex;
+  flex-direction: inherit;
+  width: 100%;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
